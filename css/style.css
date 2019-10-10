@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.txtcenter {
+    text-align: center;
+}
+
+.inner {
+    width: 100%;
+}
+
+.desktopG, .desktop, .tablette {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .telephone {
+        display: none;
+    }
+
+    .tablette {
+        display: block;
+    }
+
+    .img {
+        width: 48.3%;
+        margin: 5px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 971px) {
+    body {
+        margin : 0;
+    }
+    .inner {
+        width: 971px;
+        margin: 0 auto;
+    }
+
+    .tablette {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .img {
+        width: 471px;
+    }
+}
+
+@media screen and (min-width: 1370px) {
+    .inner {
+        width: 1370px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .desktopG {
+        display: block;
+    }
+
+    .img {
+        width: 318px;
+    }
+}
